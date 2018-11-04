@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 顶部 */
+        .box{
+            width: 100%;
+            height: 120%;
+            position: absolute;
+        }
+        /* .boxtwo{
+            width: 100%;
+            height: 300%;
+            position: absolute;
+        } */
+        .hm-topBar{
+            width: 100%;
+            height: 45px;
+            background: url(./image/箭头.png) no-repeat;
+            background-size: 35px 40px;
+            border-bottom: 1px solid #cccccc;
+            /* position: absolute; */
+            position: relative;
+        }
+        .hm-topBar>[class^="icon-"]{
+            position: absolute;
+            top: 0;
+            height: 44px;
+            width: 40px;
+            padding: 12px 10px;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+        .hm-topBar>.icon-back{
+            left:0;
+            background-position: -20px 0;
+        }
+        .hm-topBar>.icon-menu{
+            right: 1%;
+            background-position: -60px 0;
+            background: url(./image/搜索.png) no-repeat;
+            background-size: 35px 40px;
+            position: absolute;
+
+        }
+        .hm-topBar>form{
+            width: 100%;
+            height: 44px;
+            padding: 0 40px;
+        }
+        .hm-topBar>form>input{
+            width: 70%;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            height: 30px;
+            margin-top: 7px;
+            text-align: center;
+        }
+        .hm-topBar>h3{
+            text-align: center;
+            line-height: 44px;
+            font-weight: normal;
+        }
+        
+        /* 左侧栏 */
+        .hm-category-left{
+            width: 90px;
+            height: 100%;
+            overflow: hidden;
+            float: left;
+            padding: 10px 30px 0 0;
+        }
+        .hm-category-left>ul>li{
+         width: 90px;
+         height: 70px;
+         text-align: center;
+         line-height: 70px; 
+         border-right: 1x solid #cccccc;
+         border-bottom: 1px solid #cccccc;
+         list-style: none;
+         
+        }
+        .hm-category-left>ul>li.now{
+            border-right: none;
+            color:tan;
+        }
+
+        /* 右侧 */
+        .hm-category-right{
+            overflow: hidden;
+            height: 100%;
+        }
+        .hm-category-right-box{
+            padding: 0 10px;
+        }
+        .hm-category-right-box>.banner{
+            width: 100%;
+            padding-top: 5px;
+            display: block;
+        }
+        .hm-category-right-box>.banner>img{
+            width: 100%;
+            /* margin: 70px 0 0 10px; */
+         }
+
+        .hot-cat{
+            margin-top: 1px;
+           
+        }
+        .hot-cat>h2{
+            font-size: 15px;
+        }
+        .hot-cat>ul{
+            width: 100%;
+            /* height: 100%;  */
+        }
+        .hot-cat>ul>li{
+            width: 33%;
+            float: left;
+            list-style: none;
+            /* padding-left: 20px; */
+
+        }
+        .hot-cat>ul>li>a{
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+            text-decoration: none;
+            /* margin-left: 30px; */
+           
+        }
+        .hot-cat>ul>li>a>img{
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+            display: block;
+            list-style: none;
+            /* position: relative; */
+            
+        }
+        .hot-cat p{
+            color: palevioletred;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="box">
+
+        <header class="hm-topBar">
+            <a href="#" class="icon-back"></a>
+            <form action="#">
+                <input type="search" placeholder="分类搜索">
+            </form>
+            <a href="#" class="icon-menu"></a>
+        </header>
+
+        <!-- 分类 -->
+        <!-- <div class="boxtwo"> -->
+        <div class="hm-category-left">
+            <ul>
+                <li>热门推荐</li>
+                <li class="now">潮流女装</li>
+                <li>品牌男装</li>
+                <li>内衣配饰</li>
+                <li>家用电器</li>
+                <li>电脑办公</li>
+                <li>手机数码</li>
+                <li>母婴频道</li>
+                <li>图书</li>
+                <li>家居生活</li>
+                <li>家具建材</li>
+                <li>家居家纺</li>
+            </ul>
+        </div>
+
+        <!-- 右边分类 -->
+        <div class="hm-category-right">
+            <div class="hm-category-right-box">
+                <a class="banner" href="#">
+                    <img src="./image/广告.png" alt="">
+                </a>
+                <div class="hot-cat">
+                    <h2>热门分类</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/图.jpg" alt="">
+                                <p>乳霜</p>
+                            </a>
+                        </li>
+                    </ul> -->
+
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>

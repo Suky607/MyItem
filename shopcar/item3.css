@@ -152,7 +152,7 @@
     text-align: center;
 }
 .option .f_right .up{
-    background: url("../Item3/images/3.png")no-repeat;
+    /* background: url("../Item3/images/3.png")no-repeat; */
     background-size: 20px 5px;
     width: 20px;
     height: 5px;
@@ -160,7 +160,7 @@
     margin-left: -1px;
 }
 .option .f_right .down{
-    background: url("../Item3/images/3.png")no-repeat;
+    /* background: url("../Item3/images/3.png")no-repeat; */
     background-size: 18px 18px;
     width: 18px;
     height: 18px;
