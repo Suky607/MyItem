@@ -1,52 +1,212 @@
 <!DOCTYPE html>
 <html lang="zh-cmn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-    body{
-       background: url(1.jpg) no-repeat;
-       background-size: 100%;
-    }
-   h1{
-
-       color: pink;
-       text-align: right;
-       /* padding-right:400px; */
-      margin-right: 400px;
-      font-size: 45px;
-      
-   }
-   ul{
-       
-      text-align: right;
-       margin-right: 430px;    
-       list-style: none;
-    
-   }
-    li{
-
-      font-size: 25px;
-     
-   }
-   a{
-       color: palevioletred;
-       text-decoration: none;
-       text-align: center;
-   }
-     
-    </style>
+    <title>淘宝网页</title>
+    <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="">
 </head>
-<body>  
-    <h1>淘宝商城</h1>
-    <ul>
-        
-        <li><a href="taobao/index.html">淘宝商城</a></li>
-         <li><a href="List/index.html">购物列表</a></li> 
-        <li><a href="shopcar/index.html">购物车</a></li> 
-       
-    </ul>
+
+<body>
+
+    <div class="page-container">
+        <div class="hzNztH">
+            <header class="header">
+                <div class="header-box">
+                    <a href="#" class="logo"></a>
+                    <form action="#">
+                        <span class="search"></span>
+                        <input type="search" placeholder="寻找宝贝店铺">
+                    </form>
+                </div>
+            </header>
+
+
+            <!-- 轮播图 -->
+            <div class="banner">
+                <ul class="clearfix">
+                    <!-- <li ><a href=""><img src="https://gw.alicdn.com/imgextra/i3/37/O1CN011C8z7hqyGel5skJ_!!37-0-lubanu.jpg" alt=""></a></li>
+             <li ><a href=""><img src="https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg" alt=""></a></li>
+            <li><a href=""><img src="https://aecpm.alicdn.com/simba/img/TB14ab1KpXXXXclXFXXSutbFXXX.jpg_q50.jpg" alt=""></a></li>
+            <li><a href=""><img src="https://gw.alicdn.com/imgextra/i3/65/O1CN011CLoDIvk2XszCpM_!!65-0-lubanu.jpg" alt=""></a></li>
+            <li><a href=""><img src="https://gw.alicdn.com/imgextra/i1/184/O1CN011DEJLSa264MDdn6_!!184-0-luban.jpg" alt=""></a></li>
+            <li><a href=""><img src="https://gw.alicdn.com/imgextra/i2/107/O1CN011Cf2qWvt38TqGk6_!!107-0-lubanu.jpg" alt=""></a></li>
+            <li><a href=""><img src="https://img.alicdn.com/tps/i4/TB1INHviNTpK1RjSZR0SuvEwXXa.jpg" alt=""></a></li>  -->
+                    <li><a href=""><img src="https://gw.alicdn.com/imgextra/i1/125/O1CN011CnHydZVYoas7nr_!!125-0-lubanu.jpg"
+                                alt=""></a></li>
+
+                </ul>
+                <ul>
+                    <li class="now"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- JS部分 -->
+            <!-- 
+	 <div class="ShowContainer" id="ShowContainer">  -->
+
+            <!-- <div id="images">
+      <a href="" class="displayImg"><img src="https://gw.alicdn.com/imgextra/i3/37/O1CN011C8z7hqyGel5skJ_!!37-0-lubanu.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://aecpm.alicdn.com/simba/img/TB14ab1KpXXXXclXFXXSutbFXXX.jpg_q50.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://gw.alicdn.com/imgextra/i3/65/O1CN011CLoDIvk2XszCpM_!!65-0-lubanu.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://gw.alicdn.com/imgextra/i1/184/O1CN011DEJLSa264MDdn6_!!184-0-luban.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://gw.alicdn.com/imgextra/i2/107/O1CN011Cf2qWvt38TqGk6_!!107-0-lubanu.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://img.alicdn.com/tps/i4/TB1INHviNTpK1RjSZR0SuvEwXXa.jpg" alt=""></a>
+	  <a href="" class="hiddenImg"><img src="https://gw.alicdn.com/imgextra/i1/125/O1CN011CnHydZVYoas7nr_!!125-0-lubanu.jpg" alt=""></a>
+	</div>
+    <script src="./item.js"></script>  -->
+
+
+
+            <div class="nav">
+                <nav class="hm-nav">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1Wxi2trsrBKNjSZFpXXcXhFXa-183-144.png_.webp" alt="">
+                                <p>天猫</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://img.alicdn.com/tfs/TB10UHQaNjaK1RjSZKzXXXVwXXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+
+                                <p>聚划算</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB11rTqtj7nBKNjSZLeXXbxCFXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>天猫国际</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./shopcar/index.html">
+                                <img src="https://gw.alicdn.com/tps/TB1eXc7PFXXXXb4XpXXXXXXXXXX-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>购物车</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1IKqDtpooBKNjSZFPXXXa2XXa-183-144.png_.webp" alt="">
+                                <p>天猫超市</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1o0FLtyMnBKNjSZFoXXbOSFXa-183-144.png_.webp" alt="">
+                                <p>充值中心</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1ydXzhCzqK1RjSZPcXXbTepXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>飞猪旅行</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1BqystrZnBKNjSZFrXXaRLFXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>领金币</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://gw.alicdn.com/tfs/TB1CMf4tlnTBKNjSZPfXXbf1XXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>拍卖</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./List/index.html">
+                                <img src="https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp"
+                                    alt="">
+                                <p>分类</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 秒杀 -->
+
+
+            <section class="product sk">
+                <div class="product-box no-border">
+                    <div class="left">
+                        <span class="icon"></span>
+                        <span class="name">掌上秒杀</span>
+                        <div class="time">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>:</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>:</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <!-- <div class="right"><a href="#">更多></a></div> -->
+                </div>
+                <!-- 秒杀内容 -->
+                <div class="con">
+                    <ul>
+                        <li>
+                            <a href=""><img src="https://gw.alicdn.com/imgextra/i1/77/TB2NUSEryFTMKJjSZFAXXckJpXa_!!77-0-luban.jpg_200x200q85s150.jpg_.webp"
+                                    alt=""></a>
+                            <p>&yen;10.00</p>
+                            <p>&yen;100.00</p>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://gw.alicdn.com/imgextra/O1CN011CMGbny4Rd1wjIj_!!66-2-lubanu.png_100x100q85s150.jpg_.webp"
+                                    alt=""></a>
+                            <p>&yen;10.00</p>
+                            <p>&yen;100.00</p>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://img.alicdn.com/imgextra/i2/129059638/O1CN012L4FkWtatCLCtrM_!!0-saturn_solar.jpg_220x220.jpg_.webp"
+                                    alt=""></a>
+                            <p>&yen;10.00</p>
+                            <p>&yen;100.00</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+
+    <div class="foot">
+        <div class="innerCenter">
+            <p class="copycright">Copyright © 2008 - 2010 淘宝互动(Taobao Interactive) <a href="#">粤ICP备05062536号</a>
+                网络文化经营许可证：粤网文[2015]1991-405号 增值电信业务经营许可证：粤B2-20110513</p>
+            <p class="govIcon"></p>
+            <div class="cl"></div>
+            <p class="webmap"><a href="">网站地图</a> | <a href="">免责声明</a></p>
+        </div>
+    </div>
+
 </body>
+
 </html>
